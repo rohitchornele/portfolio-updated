@@ -110,7 +110,7 @@ const Hero = () => {
               { icon: FaLinkedin, href: 'https://linkedin.com/in/rohit-chornele', label: 'LinkedIn' },
               { icon: FaXTwitter, href: 'https://twitter.com/rohitchornele', label: 'Twitter' },
               { icon: FaInstagram, href: 'https://www.instagram.com/rohitchornele/', label: 'Instagram' },
-              { icon: FaYoutube, href: 'https://www.youtube.com/@rohitchornele4355', label: 'Instagram' },
+              { icon: FaYoutube, href: 'https://www.youtube.com/@rohitchornele4355', label: 'Youtube' },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
