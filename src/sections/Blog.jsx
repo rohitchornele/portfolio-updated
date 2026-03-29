@@ -34,7 +34,7 @@ const Blog = () => {
                     className="mb-16"
                 >
                     <span className="font-mono text-accent text-sm tracking-widest uppercase">
-                        02 — Blog
+                        05 — Blogs
                     </span>
 
                     <h2 className="font-display font-black text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">

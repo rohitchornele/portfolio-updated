@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Mail, MapPin, Send, CheckCircle } from 'lucide-react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
 const Contact = () => {
@@ -31,7 +31,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="font-mono text-accent text-sm tracking-widest uppercase">05 — Contact</span>
+          <span className="font-mono text-accent text-sm tracking-widest uppercase">06 — Contact</span>
           <h2 className="font-display font-black text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">
             Let's Talk
           </h2>
@@ -75,6 +75,8 @@ const Contact = () => {
                   { icon: FaGithub, href: 'https://github.com/rohitchornele', label: 'GitHub' },
                   { icon: FaLinkedin, href: 'https://linkedin.com/in/rohitchornele', label: 'LinkedIn' },
                   { icon: FaXTwitter, href: 'https://twitter.com/rohitchornele', label: 'Twitter' },
+                  { icon: FaInstagram, href: 'https://www.instagram.com/rohitchornele/', label: 'Instagram' },
+                  { icon: FaYoutube, href: 'https://www.youtube.com/@rohitchornele4355', label: 'Youtube' },
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
                     key={label}
