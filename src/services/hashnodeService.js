@@ -33,7 +33,6 @@ export const fetchPosts = async () => {
     })
     const ApiResponse = await response.json()
 
-    console.log("ApiResponse = ", ApiResponse)
    
     return  ApiResponse.data.publication.posts.edges
 
