@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-accent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/70;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-sky-300 to-accent bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient 4s ease infinite;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-gray-900 font-display font-semibold px-6 py-3 rounded-full 
+           hover:bg-accent-dark transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/30
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border border-accent/50 text-accent font-display font-semibold px-6 py-3 rounded-full 
+           hover:bg-accent/10 hover:border-accent transition-all duration-300 hover:scale-105
+           active:scale-95;
+  }
+
+  .nav-link {
+    @apply font-body text-sm tracking-wider uppercase relative after:absolute after:bottom-0 after:left-0 
+           after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300
+           hover:after:w-full hover:text-accent transition-colors duration-200;
+  }
+}
+
+/* Noise texture overlay */
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.15);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+}
