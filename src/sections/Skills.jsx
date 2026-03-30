@@ -51,7 +51,7 @@ const Skills = () => {
         >
           <span className="font-mono text-accent text-sm tracking-widest uppercase">02 — Skills</span>
           <h2 className="font-display font-black text-4xl md:text-5xl text-gray-900 dark:text-white mt-2">
-            My Toolkit
+            My Skills
           </h2>
           <p className="text-gray-500 dark:text-gray-400 mt-3 max-w-xl">
             Technologies I work with regularly, organized by domain.

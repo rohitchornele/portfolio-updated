@@ -49,7 +49,7 @@ const Contact = () => {
             className="lg:col-span-2 flex flex-col gap-6"
           >
             {[
-              { icon: Mail, label: 'Email', value: 'rohit.chornele@gmail.com', href: 'mailto:rohit.chornele@gmail.com' },
+              { icon: Mail, label: 'Email', value: 'rohitchornele@gmail.com', href: 'mailto:rohitchornele@gmail.com' },
               { icon: MapPin, label: 'Location', value: 'India · Remote friendly', href: null },
             ].map(({ icon: Icon, label, value, href }) => (
               <div key={label} className="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/50">
