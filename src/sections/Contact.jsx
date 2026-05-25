@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="flex gap-3">
                 {[
                   { icon: FaGithub, href: 'https://github.com/rohitchornele', label: 'GitHub' },
-                  { icon: FaLinkedin, href: 'https://linkedin.com/in/rohitchornele', label: 'LinkedIn' },
+                  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/rohit-chornele/', label: 'LinkedIn' },
                   { icon: FaXTwitter, href: 'https://twitter.com/rohitchornele', label: 'Twitter' },
                   { icon: FaInstagram, href: 'https://www.instagram.com/rohitchornele/', label: 'Instagram' },
                   { icon: FaYoutube, href: 'https://www.youtube.com/@rohitchornele4355', label: 'Youtube' },
