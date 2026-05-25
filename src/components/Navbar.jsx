@@ -90,7 +90,8 @@ const Navbar = ({ isDark, toggleTheme }) => {
 
             {/* Resume Button */}
             <motion.a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1k2LFpdxSr716sqsBCRpiXRc-ilTyVr6N/view?usp=drive_link"
+              target='_blank'
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
