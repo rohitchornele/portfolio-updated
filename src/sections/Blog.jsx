@@ -9,13 +9,94 @@ const Blog = () => {
     const [postData, setPostData] = useState([])
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        const getPosts = async () => {
-            const data = await fetchPosts()
-            setPostData(data)
-            setLoading(false)
+
+
+    const dummyPosts = [
+        {
+            node: {
+                title: "REST API Design Made Simple with Express.js",
+                url: "https://blog.rohitchornele.online/rest-api-design-made-simple-with-expressjs",
+                publishedAt: "2026-05-10T10:00:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/bpbfgp7uu73fdeyxvkg5.png"
+                },
+                seo: {
+                    description: "Learn the fundamentals of designing clean and scalable REST APIs using Express.js."
+                }
+            }
+        },
+        {
+            node: {
+                title: "Sessions vs JWT vs Cookies: Understanding Authentication Approaches",
+                url: "https://blog.rohitchornele.online/sessions-vs-jwt-vs-cookies-understanding-authentication-approaches",
+                publishedAt: "2026-05-10T09:50:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/qmp5bry62lz9xhcgmzhn.png"
+                },
+                seo: {
+                    description: "Understand the differences between sessions, JWT, and cookies for authentication in modern applications."
+                }
+            }
+        },
+        {
+            node: {
+                title: "JWT Authentication in Node.js Explained Simply",
+                url: "https://blog.rohitchornele.online/jwt-authentication-in-nodejs-explained-simply",
+                publishedAt: "2026-05-10T09:40:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/ebz8pagtdpjnuvrwi82n.png"
+                },
+                seo: {
+                    description: "A beginner-friendly guide to implementing JWT authentication securely in Node.js applications."
+                }
+            }
+        },
+        {
+            node: {
+                title: "What is Middleware in Express and How It Works",
+                url: "https://blog.rohitchornele.online/what-is-middleware-in-express-and-how-it-works",
+                publishedAt: "2026-05-10T09:30:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700325/blog-images/ujw5qouisfhrringuwgf.png"
+                },
+                seo: {
+                    description: "Learn how Express middleware works and how it helps handle requests efficiently."
+                }
+            }
+        },
+        {
+            node: {
+                title: "URL Parameters vs Query Strings in Express.js",
+                url: "https://blog.rohitchornele.online/url-parameters-vs-query-strings-in-expressjs",
+                publishedAt: "2026-05-10T09:20:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/vmc5nvpkdjiozx65r4rb.png"
+                },
+                seo: {
+                    description: "Understand the difference between route params and query strings in Express.js with examples."
+                }
+            }
+        },
+        {
+            node: {
+                title: "Handling File Uploads in Express with Multer",
+                url: "https://blog.rohitchornele.online/handling-file-uploads-in-express-with-multer",
+                publishedAt: "2026-05-10T09:10:00Z",
+                coverImage: {
+                    url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700325/blog-images/wleprknafivfuk4zktyy.png"
+                },
+                seo: {
+                    description: "Learn how to upload and manage files in Express.js using the Multer middleware."
+                }
+            }
         }
-        getPosts()
+    ]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setPostData(dummyPosts)
+            setLoading(false)
+        }, 1000)
     }, [])
 
     return (
