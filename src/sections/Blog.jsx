@@ -15,7 +15,7 @@ const Blog = () => {
         {
             node: {
                 title: "REST API Design Made Simple with Express.js",
-                url: "https://blog.rohitchornele.online/rest-api-design-made-simple-with-expressjs",
+                url: "https://blog.rohitchornele.online/rest-api-design-made-simple-with-express-js",
                 publishedAt: "2026-05-10T10:00:00Z",
                 coverImage: {
                     url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/bpbfgp7uu73fdeyxvkg5.png"
@@ -41,7 +41,7 @@ const Blog = () => {
         {
             node: {
                 title: "JWT Authentication in Node.js Explained Simply",
-                url: "https://blog.rohitchornele.online/jwt-authentication-in-nodejs-explained-simply",
+                url: "https://blog.rohitchornele.online/jwt-authentication-in-node-js-explained-simply",
                 publishedAt: "2026-05-10T09:40:00Z",
                 coverImage: {
                     url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/ebz8pagtdpjnuvrwi82n.png"
@@ -67,7 +67,7 @@ const Blog = () => {
         {
             node: {
                 title: "URL Parameters vs Query Strings in Express.js",
-                url: "https://blog.rohitchornele.online/url-parameters-vs-query-strings-in-expressjs",
+                url: "https://blog.rohitchornele.online/url-parameters-vs-query-strings-in-express-js",
                 publishedAt: "2026-05-10T09:20:00Z",
                 coverImage: {
                     url: "https://res.cloudinary.com/dhc6husi2/image/upload/v1779700326/blog-images/vmc5nvpkdjiozx65r4rb.png"
