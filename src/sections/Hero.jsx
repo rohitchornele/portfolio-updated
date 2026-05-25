@@ -4,7 +4,7 @@ import { ArrowDown,  Link, Sparkle } from 'lucide-react'
 import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-const ROLES = ['React Developer', 'Frontend Engineer', 'UI Craftsman', 'Web Developer']
+const ROLES = ['React Developer', 'Frontend Engineer', 'Full Stack Developer', 'Web Developer']
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0)
